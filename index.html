@@ -37,7 +37,7 @@
     -webkit-transition: background-color 500ms ease-out;
     -moz-transition: background-color 500ms ease-out;
     -o-transition: background-color 500ms ease-out;
-    
+
     color: white;
     font-size: 30px;
     margin: 30px;
@@ -51,12 +51,23 @@
     text-align: center;
     background: transparent;
     border: none !important;
+    font-size: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
   }
 
   .buttons:hover {
     background-color: white;
     color: black;
     cursor: pointer;
+  }
+
+  button:focus {
+    outline: 0;
   }
 </style>
 
