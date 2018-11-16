@@ -6,38 +6,42 @@
   <meta charset="UTF-8">
 </head>
 <script>
-
-
-
+  (function () {
+    var cx = '003677000180793623820:le3vn-iywos';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
 
 <style type="text/css">
-  #opening-page {
-    /*background: linear-gradient(120deg, #6F48CE 0%, #32CBE8 100%);*/
-    background: url("https://images.unsplash.com/photo-1513817423742-5f82cebc3854?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=487f0a42dc29ed43972f62a7369fe219&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+  body {
+    background: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ae83373fe7bf60aaf6ceb8daa337fc9&auto=format&fit=crop&w=1357&q=80") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    height: 100vw;
-    width: 100vw;
   }
 
-  #opener {
-    font-family: sans-serif;
+  h1 {
     color: white;
+    border: 5px solid white;
+    text-align: center;
     font-size: 50px;
+    margin: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
   }
 
-  .buttons {
-    transition: background-color 500ms ease-out;
-    -webkit-transition: background-color 500ms ease-out;
-    -moz-transition: background-color 500ms ease-out;
-    -o-transition: background-color 500ms ease-out;
-
+  .options {
     color: white;
     font-size: 30px;
     margin: 30px;
@@ -49,52 +53,61 @@
     -moz-border-radius: 10px;
     font-family: sans-serif;
     text-align: center;
-    background: transparent;
-    border: none !important;
-    font-size: 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
+    transition: background-color 500ms ease-out;
+    -webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+
   }
 
-  .buttons:hover {
+  .options:hover {
     background-color: white;
     color: black;
     cursor: pointer;
   }
 
-  button:focus {
-    outline: 0;
+  #buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #games {
+    display: grid;
   }
 </style>
 
 <body>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
-  <div id="opening-page">
+  <gcse:search id="search-bar"></gcse:search>
+  <h1>Henry Zheng</h1>
+  <div id="buttons">
     <button>
-      <div class="buttons">
-        <i class="fas fa-users">
-          <p>&ensp;&ensp;About Us</p>
+      <div class="options">
+        <p><i class="fas fa-users"></i>&ensp;&ensp;ABOUT US</p>
       </div>
     </button>
+    <button>
+      <div class="options">
+        <p><i class="fas fa-phone"></i>&ensp;&ensp;CONTACT US</p>
+      </div>
+    </button>
+  </div>
+  <div id="games">
+    <div>
 
-    <button>
-      <div class="buttons">
-        <i class="fas fa-phone"></i>
-        <p>&ensp;&ensp;Contact Us</p>
-      </div>
-    </button>
+    </div>
 
-    <button>
-      <div class="buttons">
-        <i class="fas fa-gamepad">
-          <p>&ensp;&ensp;Games</p>
-      </div>
-    </button>
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
   </div>
 </body>
 
