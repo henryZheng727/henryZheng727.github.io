@@ -4,7 +4,6 @@
 <head>
 <title>Debate Files</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link rel="stylesheet" href="https://i.icomoon.io/public/temp/8c8541bb8c/UntitledProject/style.css">
 </head>
 
 <script>
@@ -27,7 +26,7 @@ Please enable JavaScript in your browser in order to use this webpage.
   <a href="https://speechdrop.net">
     <div class="options">
       <p>
-        <i class=icon-sd-favicon_1></i>&ensp;SPEECHDROP
+        <i class=icon-speechdrop></i>&ensp;SPEECHDROP
       </p>
     </div>
   </a>
@@ -42,6 +41,41 @@ Please enable JavaScript in your browser in order to use this webpage.
 
 
 <style>
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://i.icomoon.io/public/temp/cdd02d8d39/UntitledProject/icomoon.eot?7ixf7u');
+  src:  url('https://i.icomoon.io/public/temp/cdd02d8d39/UntitledProject/icomoon.eot?7ixf7u#iefix') format('embedded-opentype'),
+    url('https://i.icomoon.io/public/temp/cdd02d8d39/UntitledProject/icomoon.ttf?7ixf7u') format('truetype'),
+    url('https://i.icomoon.io/public/temp/cdd02d8d39/UntitledProject/icomoon.woff?7ixf7u') format('woff'),
+    url('https://i.icomoon.io/public/temp/cdd02d8d39/UntitledProject/icomoon.svg?7ixf7u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-speechdrop:before {
+  content: "\e900";
+}
+.icon-skydrive:before {
+  content: "\e901";
+}
+
+
 a:link {
   text-decoration: none ;
 }
@@ -99,14 +133,6 @@ h1 {
   cursor:pointer;
 }
 
-.icon-skydrive:before {
-  content: "\e900";
-}
-
-.icon-sd-favicon_1:before {
-  content: "\e901";
-}
-
 button {
     background: transparent;
     border: none !important;
@@ -145,5 +171,4 @@ button:focus {
   position: fixed;
 }
 </style>
-
 </html>
